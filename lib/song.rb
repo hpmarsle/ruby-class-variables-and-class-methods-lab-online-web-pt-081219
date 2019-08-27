@@ -53,6 +53,7 @@ class Song
         @@genre_count[genre] = 1
       end 
     end 
+    @@genre_count
   end 
   
   def self.artist_count
@@ -62,7 +63,8 @@ class Song
       else
         @@artist_count[artist] = 1
       end 
-    end 
+    end
+    @@artist_count
   end 
   
 end 
