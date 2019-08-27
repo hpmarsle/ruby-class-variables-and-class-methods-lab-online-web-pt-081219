@@ -32,6 +32,9 @@ class Song
     @@count += 1 
   end 
   
+  def name 
+    @song_name
+  end 
   def self.count 
     @@count
   end 
