@@ -23,6 +23,7 @@ class Song
     if @@genres.include?(@genre)
       @@genres_count[@genre] += 1
     else 
+      @@genres << @genre
       @@genres_count[@genre] = 1
     end 
     
