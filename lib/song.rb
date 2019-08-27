@@ -13,9 +13,10 @@ class Song
     @artist = artist 
     @genre = genre
     if @@artists.include?(@artist)
-      
+      @artist_count[@artist] +=1 
     else  
-      @@artists << artist #if the artist is not in the list yet, if it is just update song count for the artist in artist count
+      @@artists << artist 
+      @artist_count[@artist] = 1 #if the artist is not in the listyet, if it is just update song count for the artist in artist count
     end 
     @@count += 1 
   end 
