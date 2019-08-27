@@ -16,7 +16,7 @@ class Song
       @artist_count[@artist] += 1 
     else  
       @@artists << artist 
-      @artist_count[@artist] = 1 #if the artist is not in the listyet, if it is just update song count for the artist in artist count
+      @artist_count[@artist] = 1 
     end 
     @@count += 1 
   end 
